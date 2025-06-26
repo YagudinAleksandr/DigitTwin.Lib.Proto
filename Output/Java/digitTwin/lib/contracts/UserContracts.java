@@ -3,7 +3,7 @@
 // source: userContracts.proto
 // Protobuf Java Version: 4.31.1
 
-package contracts;
+package digitTwin.lib.contracts;
 
 @com.google.protobuf.Generated
 public final class UserContracts {
@@ -27,7 +27,7 @@ public final class UserContracts {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface UserDtoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:contracts.UserDto)
+      // @@protoc_insertion_point(interface_extends:digitTwin.lib.contracts.UserDto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -94,11 +94,11 @@ public final class UserContracts {
     com.google.protobuf.StringValueOrBuilder getOrganizationIdOrBuilder();
   }
   /**
-   * Protobuf type {@code contracts.UserDto}
+   * Protobuf type {@code digitTwin.lib.contracts.UserDto}
    */
   public static final class UserDto extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:contracts.UserDto)
+      // @@protoc_insertion_point(message_implements:digitTwin.lib.contracts.UserDto)
       UserDtoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -122,15 +122,15 @@ public final class UserContracts {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return contracts.UserContracts.internal_static_contracts_UserDto_descriptor;
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserDto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return contracts.UserContracts.internal_static_contracts_UserDto_fieldAccessorTable
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserDto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              contracts.UserContracts.UserDto.class, contracts.UserContracts.UserDto.Builder.class);
+              digitTwin.lib.contracts.UserContracts.UserDto.class, digitTwin.lib.contracts.UserContracts.UserDto.Builder.class);
     }
 
     private int bitField0_;
@@ -371,10 +371,10 @@ public final class UserContracts {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof contracts.UserContracts.UserDto)) {
+      if (!(obj instanceof digitTwin.lib.contracts.UserContracts.UserDto)) {
         return super.equals(obj);
       }
-      contracts.UserContracts.UserDto other = (contracts.UserContracts.UserDto) obj;
+      digitTwin.lib.contracts.UserContracts.UserDto other = (digitTwin.lib.contracts.UserContracts.UserDto) obj;
 
       if (!getId()
           .equals(other.getId())) return false;
@@ -421,44 +421,44 @@ public final class UserContracts {
       return hash;
     }
 
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserDto parseFrom(byte[] data)
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserDto parseFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -466,26 +466,26 @@ public final class UserContracts {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static contracts.UserContracts.UserDto parseDelimitedFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static contracts.UserContracts.UserDto parseDelimitedFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserDto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -498,7 +498,7 @@ public final class UserContracts {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(contracts.UserContracts.UserDto prototype) {
+    public static Builder newBuilder(digitTwin.lib.contracts.UserContracts.UserDto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -514,26 +514,26 @@ public final class UserContracts {
       return builder;
     }
     /**
-     * Protobuf type {@code contracts.UserDto}
+     * Protobuf type {@code digitTwin.lib.contracts.UserDto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:contracts.UserDto)
-        contracts.UserContracts.UserDtoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:digitTwin.lib.contracts.UserDto)
+        digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return contracts.UserContracts.internal_static_contracts_UserDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserDto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return contracts.UserContracts.internal_static_contracts_UserDto_fieldAccessorTable
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserDto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                contracts.UserContracts.UserDto.class, contracts.UserContracts.UserDto.Builder.class);
+                digitTwin.lib.contracts.UserContracts.UserDto.class, digitTwin.lib.contracts.UserContracts.UserDto.Builder.class);
       }
 
-      // Construct using contracts.UserContracts.UserDto.newBuilder()
+      // Construct using digitTwin.lib.contracts.UserContracts.UserDto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -569,17 +569,17 @@ public final class UserContracts {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return contracts.UserContracts.internal_static_contracts_UserDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserDto_descriptor;
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserDto getDefaultInstanceForType() {
-        return contracts.UserContracts.UserDto.getDefaultInstance();
+      public digitTwin.lib.contracts.UserContracts.UserDto getDefaultInstanceForType() {
+        return digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserDto build() {
-        contracts.UserContracts.UserDto result = buildPartial();
+      public digitTwin.lib.contracts.UserContracts.UserDto build() {
+        digitTwin.lib.contracts.UserContracts.UserDto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -587,14 +587,14 @@ public final class UserContracts {
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserDto buildPartial() {
-        contracts.UserContracts.UserDto result = new contracts.UserContracts.UserDto(this);
+      public digitTwin.lib.contracts.UserContracts.UserDto buildPartial() {
+        digitTwin.lib.contracts.UserContracts.UserDto result = new digitTwin.lib.contracts.UserContracts.UserDto(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(contracts.UserContracts.UserDto result) {
+      private void buildPartial0(digitTwin.lib.contracts.UserContracts.UserDto result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.id_ = id_;
@@ -623,16 +623,16 @@ public final class UserContracts {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof contracts.UserContracts.UserDto) {
-          return mergeFrom((contracts.UserContracts.UserDto)other);
+        if (other instanceof digitTwin.lib.contracts.UserContracts.UserDto) {
+          return mergeFrom((digitTwin.lib.contracts.UserContracts.UserDto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(contracts.UserContracts.UserDto other) {
-        if (other == contracts.UserContracts.UserDto.getDefaultInstance()) return this;
+      public Builder mergeFrom(digitTwin.lib.contracts.UserContracts.UserDto other) {
+        if (other == digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance()) return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           bitField0_ |= 0x00000001;
@@ -1133,16 +1133,16 @@ public final class UserContracts {
         return organizationIdBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:contracts.UserDto)
+      // @@protoc_insertion_point(builder_scope:digitTwin.lib.contracts.UserDto)
     }
 
-    // @@protoc_insertion_point(class_scope:contracts.UserDto)
-    private static final contracts.UserContracts.UserDto DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:digitTwin.lib.contracts.UserDto)
+    private static final digitTwin.lib.contracts.UserContracts.UserDto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new contracts.UserContracts.UserDto();
+      DEFAULT_INSTANCE = new digitTwin.lib.contracts.UserContracts.UserDto();
     }
 
-    public static contracts.UserContracts.UserDto getDefaultInstance() {
+    public static digitTwin.lib.contracts.UserContracts.UserDto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1178,14 +1178,14 @@ public final class UserContracts {
     }
 
     @java.lang.Override
-    public contracts.UserContracts.UserDto getDefaultInstanceForType() {
+    public digitTwin.lib.contracts.UserContracts.UserDto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface UserCreateDtoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:contracts.UserCreateDto)
+      // @@protoc_insertion_point(interface_extends:digitTwin.lib.contracts.UserCreateDto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1252,11 +1252,11 @@ public final class UserContracts {
     com.google.protobuf.StringValueOrBuilder getOrganizationIdOrBuilder();
   }
   /**
-   * Protobuf type {@code contracts.UserCreateDto}
+   * Protobuf type {@code digitTwin.lib.contracts.UserCreateDto}
    */
   public static final class UserCreateDto extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:contracts.UserCreateDto)
+      // @@protoc_insertion_point(message_implements:digitTwin.lib.contracts.UserCreateDto)
       UserCreateDtoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -1280,15 +1280,15 @@ public final class UserContracts {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return contracts.UserContracts.internal_static_contracts_UserCreateDto_descriptor;
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserCreateDto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return contracts.UserContracts.internal_static_contracts_UserCreateDto_fieldAccessorTable
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserCreateDto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              contracts.UserContracts.UserCreateDto.class, contracts.UserContracts.UserCreateDto.Builder.class);
+              digitTwin.lib.contracts.UserContracts.UserCreateDto.class, digitTwin.lib.contracts.UserContracts.UserCreateDto.Builder.class);
     }
 
     private int bitField0_;
@@ -1529,10 +1529,10 @@ public final class UserContracts {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof contracts.UserContracts.UserCreateDto)) {
+      if (!(obj instanceof digitTwin.lib.contracts.UserContracts.UserCreateDto)) {
         return super.equals(obj);
       }
-      contracts.UserContracts.UserCreateDto other = (contracts.UserContracts.UserCreateDto) obj;
+      digitTwin.lib.contracts.UserContracts.UserCreateDto other = (digitTwin.lib.contracts.UserContracts.UserCreateDto) obj;
 
       if (!getEmail()
           .equals(other.getEmail())) return false;
@@ -1579,44 +1579,44 @@ public final class UserContracts {
       return hash;
     }
 
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(byte[] data)
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1624,26 +1624,26 @@ public final class UserContracts {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static contracts.UserContracts.UserCreateDto parseDelimitedFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static contracts.UserContracts.UserCreateDto parseDelimitedFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserCreateDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1656,7 +1656,7 @@ public final class UserContracts {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(contracts.UserContracts.UserCreateDto prototype) {
+    public static Builder newBuilder(digitTwin.lib.contracts.UserContracts.UserCreateDto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1672,26 +1672,26 @@ public final class UserContracts {
       return builder;
     }
     /**
-     * Protobuf type {@code contracts.UserCreateDto}
+     * Protobuf type {@code digitTwin.lib.contracts.UserCreateDto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:contracts.UserCreateDto)
-        contracts.UserContracts.UserCreateDtoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:digitTwin.lib.contracts.UserCreateDto)
+        digitTwin.lib.contracts.UserContracts.UserCreateDtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return contracts.UserContracts.internal_static_contracts_UserCreateDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserCreateDto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return contracts.UserContracts.internal_static_contracts_UserCreateDto_fieldAccessorTable
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserCreateDto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                contracts.UserContracts.UserCreateDto.class, contracts.UserContracts.UserCreateDto.Builder.class);
+                digitTwin.lib.contracts.UserContracts.UserCreateDto.class, digitTwin.lib.contracts.UserContracts.UserCreateDto.Builder.class);
       }
 
-      // Construct using contracts.UserContracts.UserCreateDto.newBuilder()
+      // Construct using digitTwin.lib.contracts.UserContracts.UserCreateDto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1727,17 +1727,17 @@ public final class UserContracts {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return contracts.UserContracts.internal_static_contracts_UserCreateDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserCreateDto_descriptor;
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserCreateDto getDefaultInstanceForType() {
-        return contracts.UserContracts.UserCreateDto.getDefaultInstance();
+      public digitTwin.lib.contracts.UserContracts.UserCreateDto getDefaultInstanceForType() {
+        return digitTwin.lib.contracts.UserContracts.UserCreateDto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserCreateDto build() {
-        contracts.UserContracts.UserCreateDto result = buildPartial();
+      public digitTwin.lib.contracts.UserContracts.UserCreateDto build() {
+        digitTwin.lib.contracts.UserContracts.UserCreateDto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1745,14 +1745,14 @@ public final class UserContracts {
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserCreateDto buildPartial() {
-        contracts.UserContracts.UserCreateDto result = new contracts.UserContracts.UserCreateDto(this);
+      public digitTwin.lib.contracts.UserContracts.UserCreateDto buildPartial() {
+        digitTwin.lib.contracts.UserContracts.UserCreateDto result = new digitTwin.lib.contracts.UserContracts.UserCreateDto(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(contracts.UserContracts.UserCreateDto result) {
+      private void buildPartial0(digitTwin.lib.contracts.UserContracts.UserCreateDto result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.email_ = email_;
@@ -1781,16 +1781,16 @@ public final class UserContracts {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof contracts.UserContracts.UserCreateDto) {
-          return mergeFrom((contracts.UserContracts.UserCreateDto)other);
+        if (other instanceof digitTwin.lib.contracts.UserContracts.UserCreateDto) {
+          return mergeFrom((digitTwin.lib.contracts.UserContracts.UserCreateDto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(contracts.UserContracts.UserCreateDto other) {
-        if (other == contracts.UserContracts.UserCreateDto.getDefaultInstance()) return this;
+      public Builder mergeFrom(digitTwin.lib.contracts.UserContracts.UserCreateDto other) {
+        if (other == digitTwin.lib.contracts.UserContracts.UserCreateDto.getDefaultInstance()) return this;
         if (!other.getEmail().isEmpty()) {
           email_ = other.email_;
           bitField0_ |= 0x00000001;
@@ -2291,16 +2291,16 @@ public final class UserContracts {
         return organizationIdBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:contracts.UserCreateDto)
+      // @@protoc_insertion_point(builder_scope:digitTwin.lib.contracts.UserCreateDto)
     }
 
-    // @@protoc_insertion_point(class_scope:contracts.UserCreateDto)
-    private static final contracts.UserContracts.UserCreateDto DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:digitTwin.lib.contracts.UserCreateDto)
+    private static final digitTwin.lib.contracts.UserContracts.UserCreateDto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new contracts.UserContracts.UserCreateDto();
+      DEFAULT_INSTANCE = new digitTwin.lib.contracts.UserContracts.UserCreateDto();
     }
 
-    public static contracts.UserContracts.UserCreateDto getDefaultInstance() {
+    public static digitTwin.lib.contracts.UserContracts.UserCreateDto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2336,14 +2336,14 @@ public final class UserContracts {
     }
 
     @java.lang.Override
-    public contracts.UserContracts.UserCreateDto getDefaultInstanceForType() {
+    public digitTwin.lib.contracts.UserContracts.UserCreateDto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface UserAuthRequestDtoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:contracts.UserAuthRequestDto)
+      // @@protoc_insertion_point(interface_extends:digitTwin.lib.contracts.UserAuthRequestDto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2371,11 +2371,11 @@ public final class UserContracts {
         getPasswordBytes();
   }
   /**
-   * Protobuf type {@code contracts.UserAuthRequestDto}
+   * Protobuf type {@code digitTwin.lib.contracts.UserAuthRequestDto}
    */
   public static final class UserAuthRequestDto extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:contracts.UserAuthRequestDto)
+      // @@protoc_insertion_point(message_implements:digitTwin.lib.contracts.UserAuthRequestDto)
       UserAuthRequestDtoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -2398,15 +2398,15 @@ public final class UserContracts {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return contracts.UserContracts.internal_static_contracts_UserAuthRequestDto_descriptor;
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthRequestDto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return contracts.UserContracts.internal_static_contracts_UserAuthRequestDto_fieldAccessorTable
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthRequestDto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              contracts.UserContracts.UserAuthRequestDto.class, contracts.UserContracts.UserAuthRequestDto.Builder.class);
+              digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.class, digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.Builder.class);
     }
 
     public static final int EMAIL_FIELD_NUMBER = 1;
@@ -2532,10 +2532,10 @@ public final class UserContracts {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof contracts.UserContracts.UserAuthRequestDto)) {
+      if (!(obj instanceof digitTwin.lib.contracts.UserContracts.UserAuthRequestDto)) {
         return super.equals(obj);
       }
-      contracts.UserContracts.UserAuthRequestDto other = (contracts.UserContracts.UserAuthRequestDto) obj;
+      digitTwin.lib.contracts.UserContracts.UserAuthRequestDto other = (digitTwin.lib.contracts.UserContracts.UserAuthRequestDto) obj;
 
       if (!getEmail()
           .equals(other.getEmail())) return false;
@@ -2561,44 +2561,44 @@ public final class UserContracts {
       return hash;
     }
 
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(byte[] data)
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2606,26 +2606,26 @@ public final class UserContracts {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static contracts.UserContracts.UserAuthRequestDto parseDelimitedFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static contracts.UserContracts.UserAuthRequestDto parseDelimitedFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserAuthRequestDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2638,7 +2638,7 @@ public final class UserContracts {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(contracts.UserContracts.UserAuthRequestDto prototype) {
+    public static Builder newBuilder(digitTwin.lib.contracts.UserContracts.UserAuthRequestDto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2654,26 +2654,26 @@ public final class UserContracts {
       return builder;
     }
     /**
-     * Protobuf type {@code contracts.UserAuthRequestDto}
+     * Protobuf type {@code digitTwin.lib.contracts.UserAuthRequestDto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:contracts.UserAuthRequestDto)
-        contracts.UserContracts.UserAuthRequestDtoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:digitTwin.lib.contracts.UserAuthRequestDto)
+        digitTwin.lib.contracts.UserContracts.UserAuthRequestDtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return contracts.UserContracts.internal_static_contracts_UserAuthRequestDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthRequestDto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return contracts.UserContracts.internal_static_contracts_UserAuthRequestDto_fieldAccessorTable
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthRequestDto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                contracts.UserContracts.UserAuthRequestDto.class, contracts.UserContracts.UserAuthRequestDto.Builder.class);
+                digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.class, digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.Builder.class);
       }
 
-      // Construct using contracts.UserContracts.UserAuthRequestDto.newBuilder()
+      // Construct using digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.newBuilder()
       private Builder() {
 
       }
@@ -2695,17 +2695,17 @@ public final class UserContracts {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return contracts.UserContracts.internal_static_contracts_UserAuthRequestDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthRequestDto_descriptor;
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserAuthRequestDto getDefaultInstanceForType() {
-        return contracts.UserContracts.UserAuthRequestDto.getDefaultInstance();
+      public digitTwin.lib.contracts.UserContracts.UserAuthRequestDto getDefaultInstanceForType() {
+        return digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserAuthRequestDto build() {
-        contracts.UserContracts.UserAuthRequestDto result = buildPartial();
+      public digitTwin.lib.contracts.UserContracts.UserAuthRequestDto build() {
+        digitTwin.lib.contracts.UserContracts.UserAuthRequestDto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2713,14 +2713,14 @@ public final class UserContracts {
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserAuthRequestDto buildPartial() {
-        contracts.UserContracts.UserAuthRequestDto result = new contracts.UserContracts.UserAuthRequestDto(this);
+      public digitTwin.lib.contracts.UserContracts.UserAuthRequestDto buildPartial() {
+        digitTwin.lib.contracts.UserContracts.UserAuthRequestDto result = new digitTwin.lib.contracts.UserContracts.UserAuthRequestDto(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(contracts.UserContracts.UserAuthRequestDto result) {
+      private void buildPartial0(digitTwin.lib.contracts.UserContracts.UserAuthRequestDto result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.email_ = email_;
@@ -2732,16 +2732,16 @@ public final class UserContracts {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof contracts.UserContracts.UserAuthRequestDto) {
-          return mergeFrom((contracts.UserContracts.UserAuthRequestDto)other);
+        if (other instanceof digitTwin.lib.contracts.UserContracts.UserAuthRequestDto) {
+          return mergeFrom((digitTwin.lib.contracts.UserContracts.UserAuthRequestDto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(contracts.UserContracts.UserAuthRequestDto other) {
-        if (other == contracts.UserContracts.UserAuthRequestDto.getDefaultInstance()) return this;
+      public Builder mergeFrom(digitTwin.lib.contracts.UserContracts.UserAuthRequestDto other) {
+        if (other == digitTwin.lib.contracts.UserContracts.UserAuthRequestDto.getDefaultInstance()) return this;
         if (!other.getEmail().isEmpty()) {
           email_ = other.email_;
           bitField0_ |= 0x00000001;
@@ -2949,16 +2949,16 @@ public final class UserContracts {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:contracts.UserAuthRequestDto)
+      // @@protoc_insertion_point(builder_scope:digitTwin.lib.contracts.UserAuthRequestDto)
     }
 
-    // @@protoc_insertion_point(class_scope:contracts.UserAuthRequestDto)
-    private static final contracts.UserContracts.UserAuthRequestDto DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:digitTwin.lib.contracts.UserAuthRequestDto)
+    private static final digitTwin.lib.contracts.UserContracts.UserAuthRequestDto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new contracts.UserContracts.UserAuthRequestDto();
+      DEFAULT_INSTANCE = new digitTwin.lib.contracts.UserContracts.UserAuthRequestDto();
     }
 
-    public static contracts.UserContracts.UserAuthRequestDto getDefaultInstance() {
+    public static digitTwin.lib.contracts.UserContracts.UserAuthRequestDto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2994,14 +2994,14 @@ public final class UserContracts {
     }
 
     @java.lang.Override
-    public contracts.UserContracts.UserAuthRequestDto getDefaultInstanceForType() {
+    public digitTwin.lib.contracts.UserContracts.UserAuthRequestDto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface TokenInfoDtoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:contracts.TokenInfoDto)
+      // @@protoc_insertion_point(interface_extends:digitTwin.lib.contracts.TokenInfoDto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3086,11 +3086,11 @@ public final class UserContracts {
     int getExpiresIn();
   }
   /**
-   * Protobuf type {@code contracts.TokenInfoDto}
+   * Protobuf type {@code digitTwin.lib.contracts.TokenInfoDto}
    */
   public static final class TokenInfoDto extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:contracts.TokenInfoDto)
+      // @@protoc_insertion_point(message_implements:digitTwin.lib.contracts.TokenInfoDto)
       TokenInfoDtoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -3115,15 +3115,15 @@ public final class UserContracts {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return contracts.UserContracts.internal_static_contracts_TokenInfoDto_descriptor;
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_TokenInfoDto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return contracts.UserContracts.internal_static_contracts_TokenInfoDto_fieldAccessorTable
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_TokenInfoDto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              contracts.UserContracts.TokenInfoDto.class, contracts.UserContracts.TokenInfoDto.Builder.class);
+              digitTwin.lib.contracts.UserContracts.TokenInfoDto.class, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder.class);
     }
 
     private int bitField0_;
@@ -3427,10 +3427,10 @@ public final class UserContracts {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof contracts.UserContracts.TokenInfoDto)) {
+      if (!(obj instanceof digitTwin.lib.contracts.UserContracts.TokenInfoDto)) {
         return super.equals(obj);
       }
-      contracts.UserContracts.TokenInfoDto other = (contracts.UserContracts.TokenInfoDto) obj;
+      digitTwin.lib.contracts.UserContracts.TokenInfoDto other = (digitTwin.lib.contracts.UserContracts.TokenInfoDto) obj;
 
       if (!getUserId()
           .equals(other.getUserId())) return false;
@@ -3485,44 +3485,44 @@ public final class UserContracts {
       return hash;
     }
 
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(byte[] data)
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3530,26 +3530,26 @@ public final class UserContracts {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static contracts.UserContracts.TokenInfoDto parseDelimitedFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static contracts.UserContracts.TokenInfoDto parseDelimitedFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.TokenInfoDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3562,7 +3562,7 @@ public final class UserContracts {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(contracts.UserContracts.TokenInfoDto prototype) {
+    public static Builder newBuilder(digitTwin.lib.contracts.UserContracts.TokenInfoDto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3578,26 +3578,26 @@ public final class UserContracts {
       return builder;
     }
     /**
-     * Protobuf type {@code contracts.TokenInfoDto}
+     * Protobuf type {@code digitTwin.lib.contracts.TokenInfoDto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:contracts.TokenInfoDto)
-        contracts.UserContracts.TokenInfoDtoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:digitTwin.lib.contracts.TokenInfoDto)
+        digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return contracts.UserContracts.internal_static_contracts_TokenInfoDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_TokenInfoDto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return contracts.UserContracts.internal_static_contracts_TokenInfoDto_fieldAccessorTable
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_TokenInfoDto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                contracts.UserContracts.TokenInfoDto.class, contracts.UserContracts.TokenInfoDto.Builder.class);
+                digitTwin.lib.contracts.UserContracts.TokenInfoDto.class, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder.class);
       }
 
-      // Construct using contracts.UserContracts.TokenInfoDto.newBuilder()
+      // Construct using digitTwin.lib.contracts.UserContracts.TokenInfoDto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3635,17 +3635,17 @@ public final class UserContracts {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return contracts.UserContracts.internal_static_contracts_TokenInfoDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_TokenInfoDto_descriptor;
       }
 
       @java.lang.Override
-      public contracts.UserContracts.TokenInfoDto getDefaultInstanceForType() {
-        return contracts.UserContracts.TokenInfoDto.getDefaultInstance();
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto getDefaultInstanceForType() {
+        return digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public contracts.UserContracts.TokenInfoDto build() {
-        contracts.UserContracts.TokenInfoDto result = buildPartial();
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto build() {
+        digitTwin.lib.contracts.UserContracts.TokenInfoDto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3653,14 +3653,14 @@ public final class UserContracts {
       }
 
       @java.lang.Override
-      public contracts.UserContracts.TokenInfoDto buildPartial() {
-        contracts.UserContracts.TokenInfoDto result = new contracts.UserContracts.TokenInfoDto(this);
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto buildPartial() {
+        digitTwin.lib.contracts.UserContracts.TokenInfoDto result = new digitTwin.lib.contracts.UserContracts.TokenInfoDto(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(contracts.UserContracts.TokenInfoDto result) {
+      private void buildPartial0(digitTwin.lib.contracts.UserContracts.TokenInfoDto result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.userId_ = userId_;
@@ -3695,16 +3695,16 @@ public final class UserContracts {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof contracts.UserContracts.TokenInfoDto) {
-          return mergeFrom((contracts.UserContracts.TokenInfoDto)other);
+        if (other instanceof digitTwin.lib.contracts.UserContracts.TokenInfoDto) {
+          return mergeFrom((digitTwin.lib.contracts.UserContracts.TokenInfoDto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(contracts.UserContracts.TokenInfoDto other) {
-        if (other == contracts.UserContracts.TokenInfoDto.getDefaultInstance()) return this;
+      public Builder mergeFrom(digitTwin.lib.contracts.UserContracts.TokenInfoDto other) {
+        if (other == digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance()) return this;
         if (!other.getUserId().isEmpty()) {
           userId_ = other.userId_;
           bitField0_ |= 0x00000001;
@@ -4327,16 +4327,16 @@ public final class UserContracts {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:contracts.TokenInfoDto)
+      // @@protoc_insertion_point(builder_scope:digitTwin.lib.contracts.TokenInfoDto)
     }
 
-    // @@protoc_insertion_point(class_scope:contracts.TokenInfoDto)
-    private static final contracts.UserContracts.TokenInfoDto DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:digitTwin.lib.contracts.TokenInfoDto)
+    private static final digitTwin.lib.contracts.UserContracts.TokenInfoDto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new contracts.UserContracts.TokenInfoDto();
+      DEFAULT_INSTANCE = new digitTwin.lib.contracts.UserContracts.TokenInfoDto();
     }
 
-    public static contracts.UserContracts.TokenInfoDto getDefaultInstance() {
+    public static digitTwin.lib.contracts.UserContracts.TokenInfoDto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4372,67 +4372,67 @@ public final class UserContracts {
     }
 
     @java.lang.Override
-    public contracts.UserContracts.TokenInfoDto getDefaultInstanceForType() {
+    public digitTwin.lib.contracts.UserContracts.TokenInfoDto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface UserAuthResponseDtoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:contracts.UserAuthResponseDto)
+      // @@protoc_insertion_point(interface_extends:digitTwin.lib.contracts.UserAuthResponseDto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.contracts.TokenInfoDto authToken = 1;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
      * @return Whether the authToken field is set.
      */
     boolean hasAuthToken();
     /**
-     * <code>.contracts.TokenInfoDto authToken = 1;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
      * @return The authToken.
      */
-    contracts.UserContracts.TokenInfoDto getAuthToken();
+    digitTwin.lib.contracts.UserContracts.TokenInfoDto getAuthToken();
     /**
-     * <code>.contracts.TokenInfoDto authToken = 1;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
      */
-    contracts.UserContracts.TokenInfoDtoOrBuilder getAuthTokenOrBuilder();
+    digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder getAuthTokenOrBuilder();
 
     /**
-     * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
      * @return Whether the refreshToken field is set.
      */
     boolean hasRefreshToken();
     /**
-     * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
      * @return The refreshToken.
      */
-    contracts.UserContracts.TokenInfoDto getRefreshToken();
+    digitTwin.lib.contracts.UserContracts.TokenInfoDto getRefreshToken();
     /**
-     * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
      */
-    contracts.UserContracts.TokenInfoDtoOrBuilder getRefreshTokenOrBuilder();
+    digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder getRefreshTokenOrBuilder();
 
     /**
-     * <code>.contracts.UserDto user = 3;</code>
+     * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
      * @return Whether the user field is set.
      */
     boolean hasUser();
     /**
-     * <code>.contracts.UserDto user = 3;</code>
+     * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
      * @return The user.
      */
-    contracts.UserContracts.UserDto getUser();
+    digitTwin.lib.contracts.UserContracts.UserDto getUser();
     /**
-     * <code>.contracts.UserDto user = 3;</code>
+     * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
      */
-    contracts.UserContracts.UserDtoOrBuilder getUserOrBuilder();
+    digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder getUserOrBuilder();
   }
   /**
-   * Protobuf type {@code contracts.UserAuthResponseDto}
+   * Protobuf type {@code digitTwin.lib.contracts.UserAuthResponseDto}
    */
   public static final class UserAuthResponseDto extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:contracts.UserAuthResponseDto)
+      // @@protoc_insertion_point(message_implements:digitTwin.lib.contracts.UserAuthResponseDto)
       UserAuthResponseDtoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -4453,22 +4453,22 @@ public final class UserContracts {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return contracts.UserContracts.internal_static_contracts_UserAuthResponseDto_descriptor;
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthResponseDto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return contracts.UserContracts.internal_static_contracts_UserAuthResponseDto_fieldAccessorTable
+      return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthResponseDto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              contracts.UserContracts.UserAuthResponseDto.class, contracts.UserContracts.UserAuthResponseDto.Builder.class);
+              digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.class, digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.Builder.class);
     }
 
     private int bitField0_;
     public static final int AUTHTOKEN_FIELD_NUMBER = 1;
-    private contracts.UserContracts.TokenInfoDto authToken_;
+    private digitTwin.lib.contracts.UserContracts.TokenInfoDto authToken_;
     /**
-     * <code>.contracts.TokenInfoDto authToken = 1;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
      * @return Whether the authToken field is set.
      */
     @java.lang.Override
@@ -4476,25 +4476,25 @@ public final class UserContracts {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.contracts.TokenInfoDto authToken = 1;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
      * @return The authToken.
      */
     @java.lang.Override
-    public contracts.UserContracts.TokenInfoDto getAuthToken() {
-      return authToken_ == null ? contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
+    public digitTwin.lib.contracts.UserContracts.TokenInfoDto getAuthToken() {
+      return authToken_ == null ? digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
     }
     /**
-     * <code>.contracts.TokenInfoDto authToken = 1;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
      */
     @java.lang.Override
-    public contracts.UserContracts.TokenInfoDtoOrBuilder getAuthTokenOrBuilder() {
-      return authToken_ == null ? contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
+    public digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder getAuthTokenOrBuilder() {
+      return authToken_ == null ? digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
     }
 
     public static final int REFRESHTOKEN_FIELD_NUMBER = 2;
-    private contracts.UserContracts.TokenInfoDto refreshToken_;
+    private digitTwin.lib.contracts.UserContracts.TokenInfoDto refreshToken_;
     /**
-     * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
      * @return Whether the refreshToken field is set.
      */
     @java.lang.Override
@@ -4502,25 +4502,25 @@ public final class UserContracts {
       return ((bitField0_ & 0x00000002) != 0);
     }
     /**
-     * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
      * @return The refreshToken.
      */
     @java.lang.Override
-    public contracts.UserContracts.TokenInfoDto getRefreshToken() {
-      return refreshToken_ == null ? contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
+    public digitTwin.lib.contracts.UserContracts.TokenInfoDto getRefreshToken() {
+      return refreshToken_ == null ? digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
     }
     /**
-     * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+     * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
      */
     @java.lang.Override
-    public contracts.UserContracts.TokenInfoDtoOrBuilder getRefreshTokenOrBuilder() {
-      return refreshToken_ == null ? contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
+    public digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder getRefreshTokenOrBuilder() {
+      return refreshToken_ == null ? digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
     }
 
     public static final int USER_FIELD_NUMBER = 3;
-    private contracts.UserContracts.UserDto user_;
+    private digitTwin.lib.contracts.UserContracts.UserDto user_;
     /**
-     * <code>.contracts.UserDto user = 3;</code>
+     * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
      * @return Whether the user field is set.
      */
     @java.lang.Override
@@ -4528,19 +4528,19 @@ public final class UserContracts {
       return ((bitField0_ & 0x00000004) != 0);
     }
     /**
-     * <code>.contracts.UserDto user = 3;</code>
+     * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
      * @return The user.
      */
     @java.lang.Override
-    public contracts.UserContracts.UserDto getUser() {
-      return user_ == null ? contracts.UserContracts.UserDto.getDefaultInstance() : user_;
+    public digitTwin.lib.contracts.UserContracts.UserDto getUser() {
+      return user_ == null ? digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance() : user_;
     }
     /**
-     * <code>.contracts.UserDto user = 3;</code>
+     * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
      */
     @java.lang.Override
-    public contracts.UserContracts.UserDtoOrBuilder getUserOrBuilder() {
-      return user_ == null ? contracts.UserContracts.UserDto.getDefaultInstance() : user_;
+    public digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder getUserOrBuilder() {
+      return user_ == null ? digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance() : user_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4597,10 +4597,10 @@ public final class UserContracts {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof contracts.UserContracts.UserAuthResponseDto)) {
+      if (!(obj instanceof digitTwin.lib.contracts.UserContracts.UserAuthResponseDto)) {
         return super.equals(obj);
       }
-      contracts.UserContracts.UserAuthResponseDto other = (contracts.UserContracts.UserAuthResponseDto) obj;
+      digitTwin.lib.contracts.UserContracts.UserAuthResponseDto other = (digitTwin.lib.contracts.UserContracts.UserAuthResponseDto) obj;
 
       if (hasAuthToken() != other.hasAuthToken()) return false;
       if (hasAuthToken()) {
@@ -4645,44 +4645,44 @@ public final class UserContracts {
       return hash;
     }
 
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(byte[] data)
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4690,26 +4690,26 @@ public final class UserContracts {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static contracts.UserContracts.UserAuthResponseDto parseDelimitedFrom(java.io.InputStream input)
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static contracts.UserContracts.UserAuthResponseDto parseDelimitedFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static contracts.UserContracts.UserAuthResponseDto parseFrom(
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4722,7 +4722,7 @@ public final class UserContracts {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(contracts.UserContracts.UserAuthResponseDto prototype) {
+    public static Builder newBuilder(digitTwin.lib.contracts.UserContracts.UserAuthResponseDto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4738,26 +4738,26 @@ public final class UserContracts {
       return builder;
     }
     /**
-     * Protobuf type {@code contracts.UserAuthResponseDto}
+     * Protobuf type {@code digitTwin.lib.contracts.UserAuthResponseDto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:contracts.UserAuthResponseDto)
-        contracts.UserContracts.UserAuthResponseDtoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:digitTwin.lib.contracts.UserAuthResponseDto)
+        digitTwin.lib.contracts.UserContracts.UserAuthResponseDtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return contracts.UserContracts.internal_static_contracts_UserAuthResponseDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthResponseDto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return contracts.UserContracts.internal_static_contracts_UserAuthResponseDto_fieldAccessorTable
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthResponseDto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                contracts.UserContracts.UserAuthResponseDto.class, contracts.UserContracts.UserAuthResponseDto.Builder.class);
+                digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.class, digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.Builder.class);
       }
 
-      // Construct using contracts.UserContracts.UserAuthResponseDto.newBuilder()
+      // Construct using digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4800,17 +4800,17 @@ public final class UserContracts {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return contracts.UserContracts.internal_static_contracts_UserAuthResponseDto_descriptor;
+        return digitTwin.lib.contracts.UserContracts.internal_static_digitTwin_lib_contracts_UserAuthResponseDto_descriptor;
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserAuthResponseDto getDefaultInstanceForType() {
-        return contracts.UserContracts.UserAuthResponseDto.getDefaultInstance();
+      public digitTwin.lib.contracts.UserContracts.UserAuthResponseDto getDefaultInstanceForType() {
+        return digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserAuthResponseDto build() {
-        contracts.UserContracts.UserAuthResponseDto result = buildPartial();
+      public digitTwin.lib.contracts.UserContracts.UserAuthResponseDto build() {
+        digitTwin.lib.contracts.UserContracts.UserAuthResponseDto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4818,14 +4818,14 @@ public final class UserContracts {
       }
 
       @java.lang.Override
-      public contracts.UserContracts.UserAuthResponseDto buildPartial() {
-        contracts.UserContracts.UserAuthResponseDto result = new contracts.UserContracts.UserAuthResponseDto(this);
+      public digitTwin.lib.contracts.UserContracts.UserAuthResponseDto buildPartial() {
+        digitTwin.lib.contracts.UserContracts.UserAuthResponseDto result = new digitTwin.lib.contracts.UserContracts.UserAuthResponseDto(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(contracts.UserContracts.UserAuthResponseDto result) {
+      private void buildPartial0(digitTwin.lib.contracts.UserContracts.UserAuthResponseDto result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -4851,16 +4851,16 @@ public final class UserContracts {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof contracts.UserContracts.UserAuthResponseDto) {
-          return mergeFrom((contracts.UserContracts.UserAuthResponseDto)other);
+        if (other instanceof digitTwin.lib.contracts.UserContracts.UserAuthResponseDto) {
+          return mergeFrom((digitTwin.lib.contracts.UserContracts.UserAuthResponseDto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(contracts.UserContracts.UserAuthResponseDto other) {
-        if (other == contracts.UserContracts.UserAuthResponseDto.getDefaultInstance()) return this;
+      public Builder mergeFrom(digitTwin.lib.contracts.UserContracts.UserAuthResponseDto other) {
+        if (other == digitTwin.lib.contracts.UserContracts.UserAuthResponseDto.getDefaultInstance()) return this;
         if (other.hasAuthToken()) {
           mergeAuthToken(other.getAuthToken());
         }
@@ -4934,31 +4934,31 @@ public final class UserContracts {
       }
       private int bitField0_;
 
-      private contracts.UserContracts.TokenInfoDto authToken_;
+      private digitTwin.lib.contracts.UserContracts.TokenInfoDto authToken_;
       private com.google.protobuf.SingleFieldBuilder<
-          contracts.UserContracts.TokenInfoDto, contracts.UserContracts.TokenInfoDto.Builder, contracts.UserContracts.TokenInfoDtoOrBuilder> authTokenBuilder_;
+          digitTwin.lib.contracts.UserContracts.TokenInfoDto, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder, digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder> authTokenBuilder_;
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        * @return Whether the authToken field is set.
        */
       public boolean hasAuthToken() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        * @return The authToken.
        */
-      public contracts.UserContracts.TokenInfoDto getAuthToken() {
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto getAuthToken() {
         if (authTokenBuilder_ == null) {
-          return authToken_ == null ? contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
+          return authToken_ == null ? digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
         } else {
           return authTokenBuilder_.getMessage();
         }
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
-      public Builder setAuthToken(contracts.UserContracts.TokenInfoDto value) {
+      public Builder setAuthToken(digitTwin.lib.contracts.UserContracts.TokenInfoDto value) {
         if (authTokenBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4972,10 +4972,10 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
       public Builder setAuthToken(
-          contracts.UserContracts.TokenInfoDto.Builder builderForValue) {
+          digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder builderForValue) {
         if (authTokenBuilder_ == null) {
           authToken_ = builderForValue.build();
         } else {
@@ -4986,13 +4986,13 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
-      public Builder mergeAuthToken(contracts.UserContracts.TokenInfoDto value) {
+      public Builder mergeAuthToken(digitTwin.lib.contracts.UserContracts.TokenInfoDto value) {
         if (authTokenBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             authToken_ != null &&
-            authToken_ != contracts.UserContracts.TokenInfoDto.getDefaultInstance()) {
+            authToken_ != digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance()) {
             getAuthTokenBuilder().mergeFrom(value);
           } else {
             authToken_ = value;
@@ -5007,7 +5007,7 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
       public Builder clearAuthToken() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -5020,33 +5020,33 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
-      public contracts.UserContracts.TokenInfoDto.Builder getAuthTokenBuilder() {
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder getAuthTokenBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return internalGetAuthTokenFieldBuilder().getBuilder();
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
-      public contracts.UserContracts.TokenInfoDtoOrBuilder getAuthTokenOrBuilder() {
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder getAuthTokenOrBuilder() {
         if (authTokenBuilder_ != null) {
           return authTokenBuilder_.getMessageOrBuilder();
         } else {
           return authToken_ == null ?
-              contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
+              digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : authToken_;
         }
       }
       /**
-       * <code>.contracts.TokenInfoDto authToken = 1;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto authToken = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          contracts.UserContracts.TokenInfoDto, contracts.UserContracts.TokenInfoDto.Builder, contracts.UserContracts.TokenInfoDtoOrBuilder> 
+          digitTwin.lib.contracts.UserContracts.TokenInfoDto, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder, digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder> 
           internalGetAuthTokenFieldBuilder() {
         if (authTokenBuilder_ == null) {
           authTokenBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              contracts.UserContracts.TokenInfoDto, contracts.UserContracts.TokenInfoDto.Builder, contracts.UserContracts.TokenInfoDtoOrBuilder>(
+              digitTwin.lib.contracts.UserContracts.TokenInfoDto, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder, digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder>(
                   getAuthToken(),
                   getParentForChildren(),
                   isClean());
@@ -5055,31 +5055,31 @@ public final class UserContracts {
         return authTokenBuilder_;
       }
 
-      private contracts.UserContracts.TokenInfoDto refreshToken_;
+      private digitTwin.lib.contracts.UserContracts.TokenInfoDto refreshToken_;
       private com.google.protobuf.SingleFieldBuilder<
-          contracts.UserContracts.TokenInfoDto, contracts.UserContracts.TokenInfoDto.Builder, contracts.UserContracts.TokenInfoDtoOrBuilder> refreshTokenBuilder_;
+          digitTwin.lib.contracts.UserContracts.TokenInfoDto, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder, digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder> refreshTokenBuilder_;
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        * @return Whether the refreshToken field is set.
        */
       public boolean hasRefreshToken() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        * @return The refreshToken.
        */
-      public contracts.UserContracts.TokenInfoDto getRefreshToken() {
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto getRefreshToken() {
         if (refreshTokenBuilder_ == null) {
-          return refreshToken_ == null ? contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
+          return refreshToken_ == null ? digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
         } else {
           return refreshTokenBuilder_.getMessage();
         }
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
-      public Builder setRefreshToken(contracts.UserContracts.TokenInfoDto value) {
+      public Builder setRefreshToken(digitTwin.lib.contracts.UserContracts.TokenInfoDto value) {
         if (refreshTokenBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5093,10 +5093,10 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
       public Builder setRefreshToken(
-          contracts.UserContracts.TokenInfoDto.Builder builderForValue) {
+          digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder builderForValue) {
         if (refreshTokenBuilder_ == null) {
           refreshToken_ = builderForValue.build();
         } else {
@@ -5107,13 +5107,13 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
-      public Builder mergeRefreshToken(contracts.UserContracts.TokenInfoDto value) {
+      public Builder mergeRefreshToken(digitTwin.lib.contracts.UserContracts.TokenInfoDto value) {
         if (refreshTokenBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             refreshToken_ != null &&
-            refreshToken_ != contracts.UserContracts.TokenInfoDto.getDefaultInstance()) {
+            refreshToken_ != digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance()) {
             getRefreshTokenBuilder().mergeFrom(value);
           } else {
             refreshToken_ = value;
@@ -5128,7 +5128,7 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
       public Builder clearRefreshToken() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -5141,33 +5141,33 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
-      public contracts.UserContracts.TokenInfoDto.Builder getRefreshTokenBuilder() {
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder getRefreshTokenBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return internalGetRefreshTokenFieldBuilder().getBuilder();
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
-      public contracts.UserContracts.TokenInfoDtoOrBuilder getRefreshTokenOrBuilder() {
+      public digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder getRefreshTokenOrBuilder() {
         if (refreshTokenBuilder_ != null) {
           return refreshTokenBuilder_.getMessageOrBuilder();
         } else {
           return refreshToken_ == null ?
-              contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
+              digitTwin.lib.contracts.UserContracts.TokenInfoDto.getDefaultInstance() : refreshToken_;
         }
       }
       /**
-       * <code>.contracts.TokenInfoDto refreshToken = 2;</code>
+       * <code>.digitTwin.lib.contracts.TokenInfoDto refreshToken = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          contracts.UserContracts.TokenInfoDto, contracts.UserContracts.TokenInfoDto.Builder, contracts.UserContracts.TokenInfoDtoOrBuilder> 
+          digitTwin.lib.contracts.UserContracts.TokenInfoDto, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder, digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder> 
           internalGetRefreshTokenFieldBuilder() {
         if (refreshTokenBuilder_ == null) {
           refreshTokenBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              contracts.UserContracts.TokenInfoDto, contracts.UserContracts.TokenInfoDto.Builder, contracts.UserContracts.TokenInfoDtoOrBuilder>(
+              digitTwin.lib.contracts.UserContracts.TokenInfoDto, digitTwin.lib.contracts.UserContracts.TokenInfoDto.Builder, digitTwin.lib.contracts.UserContracts.TokenInfoDtoOrBuilder>(
                   getRefreshToken(),
                   getParentForChildren(),
                   isClean());
@@ -5176,31 +5176,31 @@ public final class UserContracts {
         return refreshTokenBuilder_;
       }
 
-      private contracts.UserContracts.UserDto user_;
+      private digitTwin.lib.contracts.UserContracts.UserDto user_;
       private com.google.protobuf.SingleFieldBuilder<
-          contracts.UserContracts.UserDto, contracts.UserContracts.UserDto.Builder, contracts.UserContracts.UserDtoOrBuilder> userBuilder_;
+          digitTwin.lib.contracts.UserContracts.UserDto, digitTwin.lib.contracts.UserContracts.UserDto.Builder, digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder> userBuilder_;
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        * @return Whether the user field is set.
        */
       public boolean hasUser() {
         return ((bitField0_ & 0x00000004) != 0);
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        * @return The user.
        */
-      public contracts.UserContracts.UserDto getUser() {
+      public digitTwin.lib.contracts.UserContracts.UserDto getUser() {
         if (userBuilder_ == null) {
-          return user_ == null ? contracts.UserContracts.UserDto.getDefaultInstance() : user_;
+          return user_ == null ? digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance() : user_;
         } else {
           return userBuilder_.getMessage();
         }
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
-      public Builder setUser(contracts.UserContracts.UserDto value) {
+      public Builder setUser(digitTwin.lib.contracts.UserContracts.UserDto value) {
         if (userBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5214,10 +5214,10 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
       public Builder setUser(
-          contracts.UserContracts.UserDto.Builder builderForValue) {
+          digitTwin.lib.contracts.UserContracts.UserDto.Builder builderForValue) {
         if (userBuilder_ == null) {
           user_ = builderForValue.build();
         } else {
@@ -5228,13 +5228,13 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
-      public Builder mergeUser(contracts.UserContracts.UserDto value) {
+      public Builder mergeUser(digitTwin.lib.contracts.UserContracts.UserDto value) {
         if (userBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0) &&
             user_ != null &&
-            user_ != contracts.UserContracts.UserDto.getDefaultInstance()) {
+            user_ != digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance()) {
             getUserBuilder().mergeFrom(value);
           } else {
             user_ = value;
@@ -5249,7 +5249,7 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
       public Builder clearUser() {
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -5262,33 +5262,33 @@ public final class UserContracts {
         return this;
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
-      public contracts.UserContracts.UserDto.Builder getUserBuilder() {
+      public digitTwin.lib.contracts.UserContracts.UserDto.Builder getUserBuilder() {
         bitField0_ |= 0x00000004;
         onChanged();
         return internalGetUserFieldBuilder().getBuilder();
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
-      public contracts.UserContracts.UserDtoOrBuilder getUserOrBuilder() {
+      public digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder getUserOrBuilder() {
         if (userBuilder_ != null) {
           return userBuilder_.getMessageOrBuilder();
         } else {
           return user_ == null ?
-              contracts.UserContracts.UserDto.getDefaultInstance() : user_;
+              digitTwin.lib.contracts.UserContracts.UserDto.getDefaultInstance() : user_;
         }
       }
       /**
-       * <code>.contracts.UserDto user = 3;</code>
+       * <code>.digitTwin.lib.contracts.UserDto user = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          contracts.UserContracts.UserDto, contracts.UserContracts.UserDto.Builder, contracts.UserContracts.UserDtoOrBuilder> 
+          digitTwin.lib.contracts.UserContracts.UserDto, digitTwin.lib.contracts.UserContracts.UserDto.Builder, digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder> 
           internalGetUserFieldBuilder() {
         if (userBuilder_ == null) {
           userBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              contracts.UserContracts.UserDto, contracts.UserContracts.UserDto.Builder, contracts.UserContracts.UserDtoOrBuilder>(
+              digitTwin.lib.contracts.UserContracts.UserDto, digitTwin.lib.contracts.UserContracts.UserDto.Builder, digitTwin.lib.contracts.UserContracts.UserDtoOrBuilder>(
                   getUser(),
                   getParentForChildren(),
                   isClean());
@@ -5297,16 +5297,16 @@ public final class UserContracts {
         return userBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:contracts.UserAuthResponseDto)
+      // @@protoc_insertion_point(builder_scope:digitTwin.lib.contracts.UserAuthResponseDto)
     }
 
-    // @@protoc_insertion_point(class_scope:contracts.UserAuthResponseDto)
-    private static final contracts.UserContracts.UserAuthResponseDto DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:digitTwin.lib.contracts.UserAuthResponseDto)
+    private static final digitTwin.lib.contracts.UserContracts.UserAuthResponseDto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new contracts.UserContracts.UserAuthResponseDto();
+      DEFAULT_INSTANCE = new digitTwin.lib.contracts.UserContracts.UserAuthResponseDto();
     }
 
-    public static contracts.UserContracts.UserAuthResponseDto getDefaultInstance() {
+    public static digitTwin.lib.contracts.UserContracts.UserAuthResponseDto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5342,37 +5342,37 @@ public final class UserContracts {
     }
 
     @java.lang.Override
-    public contracts.UserContracts.UserAuthResponseDto getDefaultInstanceForType() {
+    public digitTwin.lib.contracts.UserContracts.UserAuthResponseDto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_contracts_UserDto_descriptor;
+    internal_static_digitTwin_lib_contracts_UserDto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_contracts_UserDto_fieldAccessorTable;
+      internal_static_digitTwin_lib_contracts_UserDto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_contracts_UserCreateDto_descriptor;
+    internal_static_digitTwin_lib_contracts_UserCreateDto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_contracts_UserCreateDto_fieldAccessorTable;
+      internal_static_digitTwin_lib_contracts_UserCreateDto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_contracts_UserAuthRequestDto_descriptor;
+    internal_static_digitTwin_lib_contracts_UserAuthRequestDto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_contracts_UserAuthRequestDto_fieldAccessorTable;
+      internal_static_digitTwin_lib_contracts_UserAuthRequestDto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_contracts_TokenInfoDto_descriptor;
+    internal_static_digitTwin_lib_contracts_TokenInfoDto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_contracts_TokenInfoDto_fieldAccessorTable;
+      internal_static_digitTwin_lib_contracts_TokenInfoDto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_contracts_UserAuthResponseDto_descriptor;
+    internal_static_digitTwin_lib_contracts_UserAuthResponseDto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_contracts_UserAuthResponseDto_fieldAccessorTable;
+      internal_static_digitTwin_lib_contracts_UserAuthResponseDto_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5382,60 +5382,61 @@ public final class UserContracts {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023userContracts.proto\022\tcontracts\032\036google" +
-      "/protobuf/wrappers.proto\"\206\001\n\007UserDto\022\n\n\002" +
-      "id\030\001 \001(\t\022\r\n\005email\030\002 \001(\t\022\014\n\004type\030\003 \001(\005\022\014\n" +
-      "\004name\030\004 \001(\t\022\016\n\006status\030\005 \001(\005\0224\n\016organizat" +
-      "ionId\030\006 \001(\0132\034.google.protobuf.StringValu" +
-      "e\"\222\001\n\rUserCreateDto\022\r\n\005email\030\001 \001(\t\022\014\n\004ty" +
-      "pe\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\020\n\010password\030\004 \001(\t" +
-      "\022\016\n\006status\030\005 \001(\005\0224\n\016organizationId\030\006 \001(\013" +
-      "2\034.google.protobuf.StringValue\"5\n\022UserAu" +
-      "thRequestDto\022\r\n\005email\030\001 \001(\t\022\020\n\010password\030" +
-      "\002 \001(\t\"\261\001\n\014TokenInfoDto\022\016\n\006userId\030\001 \001(\t\022\r" +
-      "\n\005email\030\002 \001(\t\022\014\n\004type\030\003 \001(\005\022\014\n\004name\030\004 \001(" +
-      "\t\022\016\n\006status\030\005 \001(\005\0224\n\016organizationId\030\006 \001(" +
-      "\0132\034.google.protobuf.StringValue\022\r\n\005token" +
-      "\030\007 \001(\t\022\021\n\texpiresIn\030\010 \001(\005\"\222\001\n\023UserAuthRe" +
-      "sponseDto\022*\n\tauthToken\030\001 \001(\0132\027.contracts" +
-      ".TokenInfoDto\022-\n\014refreshToken\030\002 \001(\0132\027.co" +
-      "ntracts.TokenInfoDto\022 \n\004user\030\003 \001(\0132\022.con" +
-      "tracts.UserDtob\006proto3"
+      "\n\023userContracts.proto\022\027digitTwin.lib.con" +
+      "tracts\032\036google/protobuf/wrappers.proto\"\206" +
+      "\001\n\007UserDto\022\n\n\002id\030\001 \001(\t\022\r\n\005email\030\002 \001(\t\022\014\n" +
+      "\004type\030\003 \001(\005\022\014\n\004name\030\004 \001(\t\022\016\n\006status\030\005 \001(" +
+      "\005\0224\n\016organizationId\030\006 \001(\0132\034.google.proto" +
+      "buf.StringValue\"\222\001\n\rUserCreateDto\022\r\n\005ema" +
+      "il\030\001 \001(\t\022\014\n\004type\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\020\n\010" +
+      "password\030\004 \001(\t\022\016\n\006status\030\005 \001(\005\0224\n\016organi" +
+      "zationId\030\006 \001(\0132\034.google.protobuf.StringV" +
+      "alue\"5\n\022UserAuthRequestDto\022\r\n\005email\030\001 \001(" +
+      "\t\022\020\n\010password\030\002 \001(\t\"\261\001\n\014TokenInfoDto\022\016\n\006" +
+      "userId\030\001 \001(\t\022\r\n\005email\030\002 \001(\t\022\014\n\004type\030\003 \001(" +
+      "\005\022\014\n\004name\030\004 \001(\t\022\016\n\006status\030\005 \001(\005\0224\n\016organ" +
+      "izationId\030\006 \001(\0132\034.google.protobuf.String" +
+      "Value\022\r\n\005token\030\007 \001(\t\022\021\n\texpiresIn\030\010 \001(\005\"" +
+      "\274\001\n\023UserAuthResponseDto\0228\n\tauthToken\030\001 \001" +
+      "(\0132%.digitTwin.lib.contracts.TokenInfoDt" +
+      "o\022;\n\014refreshToken\030\002 \001(\0132%.digitTwin.lib." +
+      "contracts.TokenInfoDto\022.\n\004user\030\003 \001(\0132 .d" +
+      "igitTwin.lib.contracts.UserDtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.WrappersProto.getDescriptor(),
         });
-    internal_static_contracts_UserDto_descriptor =
+    internal_static_digitTwin_lib_contracts_UserDto_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_contracts_UserDto_fieldAccessorTable = new
+    internal_static_digitTwin_lib_contracts_UserDto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_contracts_UserDto_descriptor,
+        internal_static_digitTwin_lib_contracts_UserDto_descriptor,
         new java.lang.String[] { "Id", "Email", "Type", "Name", "Status", "OrganizationId", });
-    internal_static_contracts_UserCreateDto_descriptor =
+    internal_static_digitTwin_lib_contracts_UserCreateDto_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_contracts_UserCreateDto_fieldAccessorTable = new
+    internal_static_digitTwin_lib_contracts_UserCreateDto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_contracts_UserCreateDto_descriptor,
+        internal_static_digitTwin_lib_contracts_UserCreateDto_descriptor,
         new java.lang.String[] { "Email", "Type", "Name", "Password", "Status", "OrganizationId", });
-    internal_static_contracts_UserAuthRequestDto_descriptor =
+    internal_static_digitTwin_lib_contracts_UserAuthRequestDto_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_contracts_UserAuthRequestDto_fieldAccessorTable = new
+    internal_static_digitTwin_lib_contracts_UserAuthRequestDto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_contracts_UserAuthRequestDto_descriptor,
+        internal_static_digitTwin_lib_contracts_UserAuthRequestDto_descriptor,
         new java.lang.String[] { "Email", "Password", });
-    internal_static_contracts_TokenInfoDto_descriptor =
+    internal_static_digitTwin_lib_contracts_TokenInfoDto_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_contracts_TokenInfoDto_fieldAccessorTable = new
+    internal_static_digitTwin_lib_contracts_TokenInfoDto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_contracts_TokenInfoDto_descriptor,
+        internal_static_digitTwin_lib_contracts_TokenInfoDto_descriptor,
         new java.lang.String[] { "UserId", "Email", "Type", "Name", "Status", "OrganizationId", "Token", "ExpiresIn", });
-    internal_static_contracts_UserAuthResponseDto_descriptor =
+    internal_static_digitTwin_lib_contracts_UserAuthResponseDto_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_contracts_UserAuthResponseDto_fieldAccessorTable = new
+    internal_static_digitTwin_lib_contracts_UserAuthResponseDto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_contracts_UserAuthResponseDto_descriptor,
+        internal_static_digitTwin_lib_contracts_UserAuthResponseDto_descriptor,
         new java.lang.String[] { "AuthToken", "RefreshToken", "User", });
     descriptor.resolveAllFeaturesImmutable();
     com.google.protobuf.WrappersProto.getDescriptor();
