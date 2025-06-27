@@ -25,13 +25,14 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13userContracts.proto\x12\x17\x64igitTwin.lib.contracts\x1a\x1egoogle/protobuf/wrappers.proto\"\x86\x01\n\x07UserDto\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x0c\n\x04type\x18\x03 \x01(\x05\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\x05\x12\x34\n\x0eorganizationId\x18\x06 \x01(\x0b\x32\x1c.google.protobuf.StringValue\"\x92\x01\n\rUserCreateDto\x12\r\n\x05\x65mail\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\x05\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x10\n\x08password\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\x05\x12\x34\n\x0eorganizationId\x18\x06 \x01(\x0b\x32\x1c.google.protobuf.StringValue\"5\n\x12UserAuthRequestDto\x12\r\n\x05\x65mail\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"\xb1\x01\n\x0cTokenInfoDto\x12\x0e\n\x06userId\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x0c\n\x04type\x18\x03 \x01(\x05\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\x05\x12\x34\n\x0eorganizationId\x18\x06 \x01(\x0b\x32\x1c.google.protobuf.StringValue\x12\r\n\x05token\x18\x07 \x01(\t\x12\x11\n\texpiresIn\x18\x08 \x01(\x05\"\xbc\x01\n\x13UserAuthResponseDto\x12\x38\n\tauthToken\x18\x01 \x01(\x0b\x32%.digitTwin.lib.contracts.TokenInfoDto\x12;\n\x0crefreshToken\x18\x02 \x01(\x0b\x32%.digitTwin.lib.contracts.TokenInfoDto\x12.\n\x04user\x18\x03 \x01(\x0b\x32 .digitTwin.lib.contracts.UserDtob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13userContracts.proto\x12\x17\x64igitTwin.lib.contracts\x1a\x1egoogle/protobuf/wrappers.proto\"\x86\x01\n\x07UserDto\x12\n\n\x02id\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x0c\n\x04type\x18\x03 \x01(\x05\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\x05\x12\x34\n\x0eorganizationId\x18\x06 \x01(\x0b\x32\x1c.google.protobuf.StringValue\"\x92\x01\n\rUserCreateDto\x12\r\n\x05\x65mail\x18\x01 \x01(\t\x12\x0c\n\x04type\x18\x02 \x01(\x05\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x10\n\x08password\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\x05\x12\x34\n\x0eorganizationId\x18\x06 \x01(\x0b\x32\x1c.google.protobuf.StringValue\"5\n\x12UserAuthRequestDto\x12\r\n\x05\x65mail\x18\x01 \x01(\t\x12\x10\n\x08password\x18\x02 \x01(\t\"\xc8\x01\n\x0cTokenInfoDto\x12\x0e\n\x06userId\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x10\n\x08userType\x18\x03 \x01(\x05\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\x0e\n\x06status\x18\x05 \x01(\x05\x12\x34\n\x0eorganizationId\x18\x06 \x01(\x0b\x32\x1c.google.protobuf.StringValue\x12\r\n\x05token\x18\x07 \x01(\t\x12\x11\n\texpiresAt\x18\x08 \x01(\x05\x12\x11\n\tcreatedAt\x18\t \x01(\x05\"\xbc\x01\n\x13UserAuthResponseDto\x12\x38\n\tauthToken\x18\x01 \x01(\x0b\x32%.digitTwin.lib.contracts.TokenInfoDto\x12;\n\x0crefreshToken\x18\x02 \x01(\x0b\x32%.digitTwin.lib.contracts.TokenInfoDto\x12.\n\x04user\x18\x03 \x01(\x0b\x32 .digitTwin.lib.contracts.UserDtoB7\n\x1b\x63om.digitTwin.lib.contracts\xaa\x02\x17\x44igitTwin.Lib.Contractsb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'userContracts_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  DESCRIPTOR._loaded_options = None
+  _globals['DESCRIPTOR']._loaded_options = None
+  _globals['DESCRIPTOR']._serialized_options = b'\n\033com.digitTwin.lib.contracts\252\002\027DigitTwin.Lib.Contracts'
   _globals['_USERDTO']._serialized_start=81
   _globals['_USERDTO']._serialized_end=215
   _globals['_USERCREATEDTO']._serialized_start=218
@@ -39,7 +40,7 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_USERAUTHREQUESTDTO']._serialized_start=366
   _globals['_USERAUTHREQUESTDTO']._serialized_end=419
   _globals['_TOKENINFODTO']._serialized_start=422
-  _globals['_TOKENINFODTO']._serialized_end=599
-  _globals['_USERAUTHRESPONSEDTO']._serialized_start=602
-  _globals['_USERAUTHRESPONSEDTO']._serialized_end=790
+  _globals['_TOKENINFODTO']._serialized_end=622
+  _globals['_USERAUTHRESPONSEDTO']._serialized_start=625
+  _globals['_USERAUTHRESPONSEDTO']._serialized_end=813
 # @@protoc_insertion_point(module_scope)

@@ -2,44 +2,79 @@ syntax = "proto3";
 
 package digitTwin.lib.contracts;
 
+option csharp_namespace = "DigitTwin.Lib.Contracts";
+option java_package = "com.digitTwin.lib.contracts";
+
 import "google/protobuf/wrappers.proto";
 
+// DTO пользователя
 message UserDto {
+    // Идентификатор пользователя
     string id = 1;
+    // Электронная почта пользователя
     string email = 2;
+    // Тип пользователя
     int32 type = 3;
+    // Имя пользователя
     string name = 4;
+    // Статус пользователя
     int32 status = 5;
+    // Идентификатор организации
     google.protobuf.StringValue organizationId = 6;
 }
 
+// DTO для создания пользователя
 message UserCreateDto {
+    // Электронная почта пользователя
     string email = 1;
+    // Тип пользователя
     int32 type = 2;
+    // Имя пользователя
     string name = 3;
+    // Пароль пользователя
     string password = 4;
+    // Статус пользователя
     int32 status = 5;
+    // Идентификатор организации
     google.protobuf.StringValue organizationId = 6;
 }
 
+// DTO для аутентификации пользователя
 message UserAuthRequestDto {
+    // Электронная почта пользователя
     string email = 1;
+    // Пароль пользователя
     string password = 2;
 }
 
+// DTO для токена
 message TokenInfoDto {
+    // Идентификатор пользователя
     string userId = 1;
+    // Электронная почта пользователя
     string email = 2;
-    int32 type = 3;
+    // Тип пользователя
+    int32 userType = 3;
+    // Имя пользователя
     string name = 4;
+    // Статус пользователя
     int32 status = 5;
+    // Идентификатор организации
     google.protobuf.StringValue organizationId = 6;
+    // Токен
     string token = 7;
-    int32 expiresIn = 8;
+    // Срок действия токена
+    int32 expiresAt = 8;
+    // Дата создания токена
+    int32 createdAt = 9;
 }
 
+// DTO для ответа при аутентификации
 message UserAuthResponseDto {
+    // Токен авторизации
     TokenInfoDto authToken = 1;
+    // Токен обновления
     TokenInfoDto refreshToken = 2;
+    // Информация о пользователе
     UserDto user = 3;
 }
