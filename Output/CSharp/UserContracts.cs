@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Contracts {
+namespace DigitTwin.Lib.Contracts {
 
   /// <summary>Holder for reflection information generated from userContracts.proto</summary>
   public static partial class UserContractsReflection {
@@ -24,31 +24,32 @@ namespace Contracts {
     static UserContractsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChN1c2VyQ29udHJhY3RzLnByb3RvEgljb250cmFjdHMaHmdvb2dsZS9wcm90",
-            "b2J1Zi93cmFwcGVycy5wcm90byKGAQoHVXNlckR0bxIKCgJpZBgBIAEoCRIN",
-            "CgVlbWFpbBgCIAEoCRIMCgR0eXBlGAMgASgFEgwKBG5hbWUYBCABKAkSDgoG",
-            "c3RhdHVzGAUgASgFEjQKDm9yZ2FuaXphdGlvbklkGAYgASgLMhwuZ29vZ2xl",
-            "LnByb3RvYnVmLlN0cmluZ1ZhbHVlIpIBCg1Vc2VyQ3JlYXRlRHRvEg0KBWVt",
-            "YWlsGAEgASgJEgwKBHR5cGUYAiABKAUSDAoEbmFtZRgDIAEoCRIQCghwYXNz",
-            "d29yZBgEIAEoCRIOCgZzdGF0dXMYBSABKAUSNAoOb3JnYW5pemF0aW9uSWQY",
-            "BiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUiNQoSVXNlckF1",
-            "dGhSZXF1ZXN0RHRvEg0KBWVtYWlsGAEgASgJEhAKCHBhc3N3b3JkGAIgASgJ",
-            "IrEBCgxUb2tlbkluZm9EdG8SDgoGdXNlcklkGAEgASgJEg0KBWVtYWlsGAIg",
-            "ASgJEgwKBHR5cGUYAyABKAUSDAoEbmFtZRgEIAEoCRIOCgZzdGF0dXMYBSAB",
-            "KAUSNAoOb3JnYW5pemF0aW9uSWQYBiABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSDQoFdG9rZW4YByABKAkSEQoJZXhwaXJlc0luGAggASgF",
-            "IpIBChNVc2VyQXV0aFJlc3BvbnNlRHRvEioKCWF1dGhUb2tlbhgBIAEoCzIX",
-            "LmNvbnRyYWN0cy5Ub2tlbkluZm9EdG8SLQoMcmVmcmVzaFRva2VuGAIgASgL",
-            "MhcuY29udHJhY3RzLlRva2VuSW5mb0R0bxIgCgR1c2VyGAMgASgLMhIuY29u",
-            "dHJhY3RzLlVzZXJEdG9iBnByb3RvMw=="));
+            "ChN1c2VyQ29udHJhY3RzLnByb3RvEhdkaWdpdFR3aW4ubGliLmNvbnRyYWN0",
+            "cxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvIoYBCgdVc2VyRHRv",
+            "EgoKAmlkGAEgASgJEg0KBWVtYWlsGAIgASgJEgwKBHR5cGUYAyABKAUSDAoE",
+            "bmFtZRgEIAEoCRIOCgZzdGF0dXMYBSABKAUSNAoOb3JnYW5pemF0aW9uSWQY",
+            "BiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUikgEKDVVzZXJD",
+            "cmVhdGVEdG8SDQoFZW1haWwYASABKAkSDAoEdHlwZRgCIAEoBRIMCgRuYW1l",
+            "GAMgASgJEhAKCHBhc3N3b3JkGAQgASgJEg4KBnN0YXR1cxgFIAEoBRI0Cg5v",
+            "cmdhbml6YXRpb25JZBgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZSI1ChJVc2VyQXV0aFJlcXVlc3REdG8SDQoFZW1haWwYASABKAkSEAoI",
+            "cGFzc3dvcmQYAiABKAkisQEKDFRva2VuSW5mb0R0bxIOCgZ1c2VySWQYASAB",
+            "KAkSDQoFZW1haWwYAiABKAkSDAoEdHlwZRgDIAEoBRIMCgRuYW1lGAQgASgJ",
+            "Eg4KBnN0YXR1cxgFIAEoBRI0Cg5vcmdhbml6YXRpb25JZBgGIAEoCzIcLmdv",
+            "b2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRINCgV0b2tlbhgHIAEoCRIRCgll",
+            "eHBpcmVzSW4YCCABKAUivAEKE1VzZXJBdXRoUmVzcG9uc2VEdG8SOAoJYXV0",
+            "aFRva2VuGAEgASgLMiUuZGlnaXRUd2luLmxpYi5jb250cmFjdHMuVG9rZW5J",
+            "bmZvRHRvEjsKDHJlZnJlc2hUb2tlbhgCIAEoCzIlLmRpZ2l0VHdpbi5saWIu",
+            "Y29udHJhY3RzLlRva2VuSW5mb0R0bxIuCgR1c2VyGAMgASgLMiAuZGlnaXRU",
+            "d2luLmxpYi5jb250cmFjdHMuVXNlckR0b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.UserDto), global::Contracts.UserDto.Parser, new[]{ "Id", "Email", "Type", "Name", "Status", "OrganizationId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.UserCreateDto), global::Contracts.UserCreateDto.Parser, new[]{ "Email", "Type", "Name", "Password", "Status", "OrganizationId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.UserAuthRequestDto), global::Contracts.UserAuthRequestDto.Parser, new[]{ "Email", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.TokenInfoDto), global::Contracts.TokenInfoDto.Parser, new[]{ "UserId", "Email", "Type", "Name", "Status", "OrganizationId", "Token", "ExpiresIn" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.UserAuthResponseDto), global::Contracts.UserAuthResponseDto.Parser, new[]{ "AuthToken", "RefreshToken", "User" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DigitTwin.Lib.Contracts.UserDto), global::DigitTwin.Lib.Contracts.UserDto.Parser, new[]{ "Id", "Email", "Type", "Name", "Status", "OrganizationId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DigitTwin.Lib.Contracts.UserCreateDto), global::DigitTwin.Lib.Contracts.UserCreateDto.Parser, new[]{ "Email", "Type", "Name", "Password", "Status", "OrganizationId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DigitTwin.Lib.Contracts.UserAuthRequestDto), global::DigitTwin.Lib.Contracts.UserAuthRequestDto.Parser, new[]{ "Email", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DigitTwin.Lib.Contracts.TokenInfoDto), global::DigitTwin.Lib.Contracts.TokenInfoDto.Parser, new[]{ "UserId", "Email", "Type", "Name", "Status", "OrganizationId", "Token", "ExpiresIn" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DigitTwin.Lib.Contracts.UserAuthResponseDto), global::DigitTwin.Lib.Contracts.UserAuthResponseDto.Parser, new[]{ "AuthToken", "RefreshToken", "User" }, null, null, null, null)
           }));
     }
     #endregion
@@ -70,7 +71,7 @@ namespace Contracts {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Contracts.UserContractsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::DigitTwin.Lib.Contracts.UserContractsReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -461,7 +462,7 @@ namespace Contracts {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Contracts.UserContractsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::DigitTwin.Lib.Contracts.UserContractsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -852,7 +853,7 @@ namespace Contracts {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Contracts.UserContractsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::DigitTwin.Lib.Contracts.UserContractsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1087,7 +1088,7 @@ namespace Contracts {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Contracts.UserContractsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::DigitTwin.Lib.Contracts.UserContractsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1552,7 +1553,7 @@ namespace Contracts {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Contracts.UserContractsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::DigitTwin.Lib.Contracts.UserContractsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1586,10 +1587,10 @@ namespace Contracts {
 
     /// <summary>Field number for the "authToken" field.</summary>
     public const int AuthTokenFieldNumber = 1;
-    private global::Contracts.TokenInfoDto authToken_;
+    private global::DigitTwin.Lib.Contracts.TokenInfoDto authToken_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Contracts.TokenInfoDto AuthToken {
+    public global::DigitTwin.Lib.Contracts.TokenInfoDto AuthToken {
       get { return authToken_; }
       set {
         authToken_ = value;
@@ -1598,10 +1599,10 @@ namespace Contracts {
 
     /// <summary>Field number for the "refreshToken" field.</summary>
     public const int RefreshTokenFieldNumber = 2;
-    private global::Contracts.TokenInfoDto refreshToken_;
+    private global::DigitTwin.Lib.Contracts.TokenInfoDto refreshToken_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Contracts.TokenInfoDto RefreshToken {
+    public global::DigitTwin.Lib.Contracts.TokenInfoDto RefreshToken {
       get { return refreshToken_; }
       set {
         refreshToken_ = value;
@@ -1610,10 +1611,10 @@ namespace Contracts {
 
     /// <summary>Field number for the "user" field.</summary>
     public const int UserFieldNumber = 3;
-    private global::Contracts.UserDto user_;
+    private global::DigitTwin.Lib.Contracts.UserDto user_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Contracts.UserDto User {
+    public global::DigitTwin.Lib.Contracts.UserDto User {
       get { return user_; }
       set {
         user_ = value;
@@ -1733,19 +1734,19 @@ namespace Contracts {
       }
       if (other.authToken_ != null) {
         if (authToken_ == null) {
-          AuthToken = new global::Contracts.TokenInfoDto();
+          AuthToken = new global::DigitTwin.Lib.Contracts.TokenInfoDto();
         }
         AuthToken.MergeFrom(other.AuthToken);
       }
       if (other.refreshToken_ != null) {
         if (refreshToken_ == null) {
-          RefreshToken = new global::Contracts.TokenInfoDto();
+          RefreshToken = new global::DigitTwin.Lib.Contracts.TokenInfoDto();
         }
         RefreshToken.MergeFrom(other.RefreshToken);
       }
       if (other.user_ != null) {
         if (user_ == null) {
-          User = new global::Contracts.UserDto();
+          User = new global::DigitTwin.Lib.Contracts.UserDto();
         }
         User.MergeFrom(other.User);
       }
@@ -1770,21 +1771,21 @@ namespace Contracts {
             break;
           case 10: {
             if (authToken_ == null) {
-              AuthToken = new global::Contracts.TokenInfoDto();
+              AuthToken = new global::DigitTwin.Lib.Contracts.TokenInfoDto();
             }
             input.ReadMessage(AuthToken);
             break;
           }
           case 18: {
             if (refreshToken_ == null) {
-              RefreshToken = new global::Contracts.TokenInfoDto();
+              RefreshToken = new global::DigitTwin.Lib.Contracts.TokenInfoDto();
             }
             input.ReadMessage(RefreshToken);
             break;
           }
           case 26: {
             if (user_ == null) {
-              User = new global::Contracts.UserDto();
+              User = new global::DigitTwin.Lib.Contracts.UserDto();
             }
             input.ReadMessage(User);
             break;
@@ -1810,21 +1811,21 @@ namespace Contracts {
             break;
           case 10: {
             if (authToken_ == null) {
-              AuthToken = new global::Contracts.TokenInfoDto();
+              AuthToken = new global::DigitTwin.Lib.Contracts.TokenInfoDto();
             }
             input.ReadMessage(AuthToken);
             break;
           }
           case 18: {
             if (refreshToken_ == null) {
-              RefreshToken = new global::Contracts.TokenInfoDto();
+              RefreshToken = new global::DigitTwin.Lib.Contracts.TokenInfoDto();
             }
             input.ReadMessage(RefreshToken);
             break;
           }
           case 26: {
             if (user_ == null) {
-              User = new global::Contracts.UserDto();
+              User = new global::DigitTwin.Lib.Contracts.UserDto();
             }
             input.ReadMessage(User);
             break;
