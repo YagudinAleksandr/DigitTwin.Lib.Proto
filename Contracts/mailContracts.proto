@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package digittwin.lib.contracts;
+
+option csharp_namespace = "DigitTwin.Lib.Contracts";
+option java_package = "com.digitTwin.lib.contracts";
+
+import "google/protobuf/timestamp.proto";
+
+// Тип сообщения E-mail
+enum EmailTypeEnum {
+    DEFAULT = 0;
+    // Добавьте другие типы, если нужно
+}
+
+// Базовое событие
+message EventMessage {
+    // Уникальный идентификатор события (GUID как строка)
+    string id = 1;
+    // Дата создания
+    google.protobuf.Timestamp created = 2;
+}
+
+// Базовый контракт для E-mail
+message BaseMailContract {
+    // Базовое событие
+    EventMessage eventMessage = 1;
+
+    // E-mail адресата
+    string address = 2;
+
+    // Тема письма
+    string subject = 3;
+
+    // Тело письма
+    string body = 4;
+
+    // Вложения
+    repeated string attachments = 5;
+
+    // Тип сообщения
+    EmailTypeEnum type = 6;
+} 

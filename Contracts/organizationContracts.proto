@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package digittwin.lib.contracts;
+
+option csharp_namespace = "DigitTwin.Lib.Contracts";
+option java_package = "com.digitTwin.lib.contracts";
+
+// Запрос на создание организации
+message OrganizationCreateRequestDto {
+    // Короткое название организации
+    string shortName = 1;
+    // Полное название организации
+    string fullName = 2;
+    // ИНН
+    string inn = 3;
+    // КПП
+    string kpp = 4;
+    // ОГРН
+    string ogrn = 5;
+    // Фактический адрес
+    string factAddress = 6;
+    // Юридический адрес
+    string address = 7;
+    // Рассчетный счет
+    string account = 8;
+    // Кореспондентский счет
+    string correspondentialAccount = 9;
+}
+
+// Организация
+message OrganizationDto {
+    // ИД (GUID в виде строки)
+    string id = 1;
+    // Короткое название организации
+    string shortName = 2;
+    // Полное название организации
+    string fullName = 3;
+    // ИНН
+    string inn = 4;
+    // КПП
+    string kpp = 5;
+    // ОГРН
+    string ogrn = 6;
+    // Фактический адрес
+    string factAddress = 7;
+    // Юридический адрес
+    string address = 8;
+    // Рассчетный счет
+    string account = 9;
+    // Кореспондентский счет
+    string correspondentialAccount = 10;
+}
